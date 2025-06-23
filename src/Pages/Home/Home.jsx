@@ -1,18 +1,71 @@
 import React from "react";
 import Img from "../../assets/myImg.jpg";
 import Resume from "../../assets/ShriharshNandigamwar_resume.pdf";
+import { useRef } from "react";
+
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 const Home = () => {
+  const hello = useRef();
+  useGSAP(() => {
+    gsap.from(hello.current, {
+      opacity: 0,
+      duration: 0.6,
+      x: -500,
+    });
+  });
+  const name = useRef();
+  useGSAP(() => {
+    gsap.from(name.current, {
+      opacity: 0,
+      duration: 0.6,
+      x: -500,
+    });
+  });
+
+  const position = useRef();
+  useGSAP(() => {
+    gsap.from(position.current, {
+      opacity: 0,
+      duration: 0.6,
+      y: 300,
+    });
+  });
+
+  const icons = useRef();
+  useGSAP(() => {
+    gsap.from(icons.current, {
+      opacity: 0,
+      duration: 0.6,
+      y: 200,
+    });
+  });
+  const myImg = useRef();
+  useGSAP(() => {
+    gsap.from(myImg.current, {
+      opacity: 0,
+      duration: 0.6,
+      y: 200,
+    });
+  });
+
   return (
     <>
       <div id="home">
-        <div className="mt-[30px] flex flex-col items-center mb-[30px]  ">
+        <div
+          className="mt-[30px] flex flex-col items-center mb-[30px]  "
+          ref={myImg}
+        >
           <img src={Img} alt="N/A" className="h-[200px] rounded-2xl " />
         </div>
 
-        <div className="flex flex-col items-center justify-center">
-          <p className="">Hello, I'm</p>
+        <div
+          className="flex flex-col items-center justify-center"
+          ref={position}
+        >
+          <p ref={hello}>Hello, I'm</p>
 
-          <h1 className="text-3xl font-bold text-cyan-300">
+          <h1 className="text-3xl font-bold text-cyan-300" ref={name}>
             {" "}
             Shriharsh Nandigamwar
           </h1>
@@ -37,7 +90,10 @@ const Home = () => {
           </h6>
         </div>
 
-        <div className="links flex items-center justify-center gap-3  mt-[25px]">
+        <div
+          className="links flex items-center justify-center gap-3  mt-[25px]"
+          ref={icons}
+        >
           <a
             href="https://www.linkedin.com/in/shriharsh-nandigamwar-b106702b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="bg-[#267feb] flex items-center justify-center h-[50px] w-[50px] rounded-[50%] text-[30px]  border border-cyan-300 hover:bg-[#1a1a1a] hover:text-[#267feb] "
