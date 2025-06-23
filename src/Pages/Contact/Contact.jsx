@@ -3,6 +3,7 @@ import Resume from "../../assets/ShriharshNandigamwar_resume.pdf";
 import ContactImg from "../../assets/contact-us.png";
 import gsap from "gsap";
 import { useEffect } from "react";
+import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
@@ -32,6 +33,35 @@ const Contact = () => {
     });
   }, []);
 
+  const form = useRef();
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending to server...");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "Your key");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
+
+
   return (
     <div id="contact" className="p-[20px] flex flex-col items-center">
       <h1 className="text-5xl text-cyan-300 flex justify-center mb-[10px] mt-[30px]">
@@ -50,8 +80,8 @@ const Contact = () => {
           </button>
         </a>
       </div>
-      {/* onSubmit={onSubmit} */}
-      <form className="contactForm m-[1.5rem] flex flex-col items-center justify-center w-[90%] lg:w-[600px]  ">
+    
+      <form className="contactForm m-[1.5rem] flex flex-col items-center justify-center w-[90%] lg:w-[600px]  "   onSubmit={onSubmit}>
         <input
           type="text"
           className="name font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white border border-[#282828] rounded-[0.5rem] bg-[#282828] hover:border hover:border-cyan-300  "
@@ -73,7 +103,7 @@ const Contact = () => {
           className="msg font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white border border-[#282828] rounded-[0.5rem] bg-[#282828] hover:border hover:border-cyan-300   "
           required
         ></textarea>
-        {/* <span>{result}</span> */}
+        <span>{result}</span>
         <button
           type="submit"
           value="Send"
