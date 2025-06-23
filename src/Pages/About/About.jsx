@@ -1,8 +1,40 @@
 import React from "react";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
+  useEffect(() => {
+    gsap.utils.toArray(".reveal-section").forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          y: 100,
+          opacity: 0,
+          scale: 0.9,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
-    <div id="about" className="p-[20px] mt-[20px] gap-[10px] flex flex-col items-center">
+    <div
+      id="about"
+      className="p-[20px] mt-[20px] gap-[10px] flex flex-col items-center"
+    >
       <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col gap-[10px] reveal-section max-w-[500px]">
         <h1 className="text-4xl text-cyan-300 mb-[10px] ">About Me</h1>
         <p className="text-[16px] md:text-[18px]">

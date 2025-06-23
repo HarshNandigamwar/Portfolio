@@ -1,14 +1,37 @@
 import React from "react";
 import Resume from "../../assets/ShriharshNandigamwar_resume.pdf";
 import ContactImg from "../../assets/contact-us.png";
+import gsap from "gsap";
+import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
+  // GSAP Animation
+  useEffect(() => {
+    gsap.utils.toArray(".reveal-section").forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          y: 100,
+          opacity: 0,
+          scale: 0.9,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, []);
 
-
-
-
-
-
-  
   return (
     <div id="contact" className="p-[20px] flex flex-col items-center">
       <h1 className="text-5xl text-cyan-300 flex justify-center mb-[10px] mt-[30px]">

@@ -1,18 +1,47 @@
 import React from "react";
-import"./Project.css"
+import "./Project.css";
 import Sigma from "../../assets/sigma ai.jpg";
 import cc from "../../assets/currency converter .jpg";
 import weather from "../../assets/weather app.jpg";
 import soon from "../../assets/soon.jpg";
 import git from "../../assets/github.png";
+import gsap from "gsap";
+import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 const Projects = () => {
+  useEffect(() => {
+    gsap.utils.toArray(".reveal-section").forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          y: 100,
+          opacity: 0,
+          scale: 0.9,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <div id="projects" className="p-[20px] mt-[31px]   ">
       <h1 className="text-5xl text-cyan-300 flex items-center justify-center mb-[10px]">
         Project
       </h1>
       <div className="lg:flex lg:gap-[40px] lg:ml-[6px]">
-
         <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] lg:w-[300px] ">
           <div>
             <img

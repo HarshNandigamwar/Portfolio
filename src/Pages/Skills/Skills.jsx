@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Skills.css";
 import HTML from "../../assets/html.png";
 import CSS from "../../assets/css.png";
@@ -12,7 +12,35 @@ import VScode from "../../assets/vscode.png";
 import Problem from "../../assets/problem2.jpg";
 import Commun from "../../assets/comunication.jpg";
 import API from "../../assets/api.jpg";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const Skills = () => {
+  useEffect(() => {
+    gsap.utils.toArray(".reveal-section").forEach((el) => {
+      gsap.fromTo(
+        el,
+        {
+          y: 100,
+          opacity: 0,
+          scale: 0.9,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: el,
+            start: "top 85%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <div id="skills" className="p-[20px] mt-[35px] flex flex-col items-center">
       <div className="flex items-center justify-center text-5xl text-cyan-300 mb-[20px]">
