@@ -42,7 +42,7 @@ const Contact = () => {
     setResult("Sending to server...");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "Your key");
+    formData.append("access_key", "c9d96e3c-2460-4b34-b239-ec91dd8a8cb0");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -59,8 +59,6 @@ const Contact = () => {
       setResult(data.message);
     }
   };
-
-
 
   return (
     <div id="contact" className="p-[20px] flex flex-col items-center">
@@ -80,8 +78,11 @@ const Contact = () => {
           </button>
         </a>
       </div>
-    
-      <form className="contactForm m-[1.5rem] flex flex-col items-center justify-center w-[90%] lg:w-[600px]  "   onSubmit={onSubmit}>
+
+      <form
+        className="contactForm m-[1.5rem] flex flex-col items-center justify-center w-[90%] lg:w-[600px]  "
+        onSubmit={onSubmit}
+      >
         <input
           type="text"
           className="name font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white border border-[#282828] rounded-[0.5rem] bg-[#282828] hover:border hover:border-cyan-300  "
