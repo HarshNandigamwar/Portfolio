@@ -96,24 +96,30 @@ const Home = () => {
         >
           <a
             href="https://www.linkedin.com/in/shriharsh-nandigamwar-b106702b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            className="bg-[#267feb] flex items-center justify-center h-[50px] w-[50px] rounded-[50%] text-[30px]  border border-cyan-300 hover:bg-[#1a1a1a] hover:text-[#267feb] "
             target="_blank"
           >
-            <i className="fa-brands fa-linkedin-in linkedin"></i>
+            <img
+              src="https://skillicons.dev/icons?i=linkedin"
+              alt="linkedin"
+              srcset=""
+            />
           </a>
-          <a
-            href="https://github.com/HarshNandigamwar"
-            className="bg-[#1a1a1a] flex items-center justify-center h-[50px] w-[50px] rounded-[50%] text-[30px] border border-cyan-300 hover:bg-[#ffffff] hover:text-[#1a1a1a]"
-            target="_blank"
-          >
-            <i className="fa-brands fa-github github"></i>
+          <a href="https://github.com/HarshNandigamwar" target="_blank">
+            <img
+              src="https://skillicons.dev/icons?i=github"
+              alt="Github"
+              srcset=""
+            />
           </a>
           <a
             href="https://www.instagram.com/harsh_nandigamwar?igsh=MW8yY3VzYTY0d245YQ=="
-            className="bg-[#ff24de] flex items-center justify-center h-[50px] w-[50px] rounded-[50%] text-[30px]  border border-cyan-300 hover:bg-[#1a1a1a] hover:text-[#ff24de]"
             target="_blank"
           >
-            <i className="fa-brands fa-instagram instagram"></i>
+            <img
+              src="https://skillicons.dev/icons?i=instagram"
+              alt="instagram"
+              srcset=""
+            />
           </a>
         </div>
 

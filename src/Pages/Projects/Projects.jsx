@@ -4,10 +4,9 @@ import Sigma from "../../assets/sigma ai.jpg";
 import cc from "../../assets/currency converter .jpg";
 import weather from "../../assets/weather app.jpg";
 import sigmaMart from "../../assets/SigmaMart.png";
-import git from "../../assets/github.png";
 import gsap from "gsap";
 import { useEffect } from "react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -65,7 +64,10 @@ const Projects = () => {
               href="https://github.com/HarshNandigamwar/Sigma-AI"
               target="_blank"
             >
-              <img src={git} className="githubImg invertColor h-[50px]" />
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                className="githubImg mb-[10px] h-[50px]"
+              />
             </a>
             <a
               href="https://sigma-ai-by-shriharsh.netlify.app/"
@@ -100,7 +102,10 @@ const Projects = () => {
               href="https://github.com/HarshNandigamwar/Currency-Converter"
               target="_blank"
             >
-              <img src={git} className="githubImg invertColor h-[50px]" />
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                className="githubImg mb-[10px] h-[50px]"
+              />
             </a>
             <a
               href="https://shriharsh-currency-converter.netlify.app/"
@@ -135,7 +140,10 @@ const Projects = () => {
               href="https://github.com/HarshNandigamwar/Weather-App"
               target="_blank"
             >
-              <img src={git} className="githubImg invertColor h-[50px]" />
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                className="githubImg mb-[10px] h-[50px]"
+              />
             </a>
             <a
               href="https://weather-app-shriharsh.netlify.app/"
@@ -170,7 +178,10 @@ const Projects = () => {
               href="https://github.com/HarshNandigamwar/Sigma-mart"
               target="_blank"
             >
-              <img src={git} className="githubImg invertColor h-[50px]" />
+              <img
+                src="https://skillicons.dev/icons?i=github"
+                className="githubImg mb-[10px] h-[50px]"
+              />
             </a>
             <a href="https://sigmamart.netlify.app/" target="_blank">
               <button className=" p-[0.3rem] rounded-[8px] bg-white text-[1rem] border-[2px] border-cyan-300 text-black">

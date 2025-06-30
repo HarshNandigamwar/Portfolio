@@ -3,7 +3,9 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #000000;
+    background-image: url('/public/bg.jpg');
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
     width: 100vw;
     overflow-x: hidden;
