@@ -1,4 +1,5 @@
 import React from "react";
+import './Home.css'
 import Img from "../../assets/myImg.jpg";
 import Resume from "../../assets/ShriharshNandigamwar_resume.pdf";
 import { useRef } from "react";
@@ -125,7 +126,7 @@ const Home = () => {
 
         <div className="flex justify-center mt-[25px]">
           <a href={Resume} download="Shriharsh_Nandigamwar_resume.pdf">
-            <button className="w-[10rem] bg-white border-[3px] border-cyan-300 rounded-[2rem] font-bold cursor-pointer p-[10px] text-black hover:bg-black hover:text-cyan-300">
+            <button className="resumeBtn">
               Download CV
             </button>
           </a>

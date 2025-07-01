@@ -66,6 +66,7 @@ const Projects = () => {
             >
               <img
                 src="https://skillicons.dev/icons?i=github"
+                alt="Github"
                 className="githubImg mb-[10px] h-[50px]"
               />
             </a>
@@ -104,6 +105,7 @@ const Projects = () => {
             >
               <img
                 src="https://skillicons.dev/icons?i=github"
+                alt="Github"
                 className="githubImg mb-[10px] h-[50px]"
               />
             </a>
@@ -142,6 +144,7 @@ const Projects = () => {
             >
               <img
                 src="https://skillicons.dev/icons?i=github"
+                alt="Github"
                 className="githubImg mb-[10px] h-[50px]"
               />
             </a>
@@ -180,6 +183,7 @@ const Projects = () => {
             >
               <img
                 src="https://skillicons.dev/icons?i=github"
+                alt="Github"
                 className="githubImg mb-[10px] h-[50px]"
               />
             </a>

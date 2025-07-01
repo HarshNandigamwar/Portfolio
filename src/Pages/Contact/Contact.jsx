@@ -73,9 +73,7 @@ const Contact = () => {
           className="mt-[30px]"
           download="Shriharsh_Nandigamwar_resume.pdf"
         >
-          <button className="w-[10rem] bg-white border-[3px] border-cyan-300 rounded-[2rem] font-bold cursor-pointer p-[10px] text-black hover:bg-black hover:text-cyan-300">
-            Download CV
-          </button>
+          <button className="resumeBtn">Download CV</button>
         </a>
       </div>
 

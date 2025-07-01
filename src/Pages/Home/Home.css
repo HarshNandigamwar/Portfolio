@@ -1,0 +1,32 @@
+.resumeBtn {
+  width: 10rem;
+  font: bold;
+  color: #000000;
+  cursor: pointer;
+  height: 45px;
+  border: 3px solid aqua;
+  background-image: linear-gradient(
+    to right,
+    #ffffff,
+    #ffffff,
+    #04befe,
+    #3f86ed
+  );
+  box-shadow: 0 0px 5px 0 #4184eabf;
+  background-size: 300% 100%;
+  border-radius: 2rem;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.resumeBtn:hover {
+  background-position: 100% 0;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.resumeBtn:focus {
+  outline: none;
+}
