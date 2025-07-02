@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between p-[12px] bg-[#1a1a1a] h-[50px] sticky w-full z-20 top-0">
       <div className="text-cyan-300 font-bold text-xl">{"< Shriharsh />"}</div>
-      <div onClick={() => setShowMenu(!showMenu)}>
+      <div onClick={() => setShowMenu(!showMenu)} className="cursor-pointer">
         <img
           style={{ display: showMenu ? "none" : "flex" }}
           src={MenuIcon}
@@ -15,7 +15,6 @@ const Header = () => {
         />
       </div>
 
-      
       <div
         style={{ display: showMenu ? "flex" : "none" }}
         className=" h-[300px] w-[220px] bg-[#1a1a1a] mt-[370px] flex flex-col items-center rounded-2xl p-[20px] "
