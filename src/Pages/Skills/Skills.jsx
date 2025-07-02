@@ -154,7 +154,7 @@ const Skills = () => {
               name="Netlify"
             />
 
-            {/* <SkillCard image="https://skillicons.dev/icons?i=js" name="JS" /> */}
+             <SkillCard image="https://skillicons.dev/icons?i=replit" name="Replit" /> 
           </div>
         </div>
       </div>
