@@ -7,7 +7,7 @@ Welcome to my **Portfolio Website**, where I showcase my skills, projects, and e
 - **Tailwind-CSS** – Custom styling for a sleek design
 - **GSAP** – Smooth animations and transitions
 - **Web3Forms** – Contact form handling
-- **Netlify** – Hosting and deployment
+- **Vercel** – Hosting and deployment
 
 ## 📌 Features
 - **Smooth Animations** – Powered by GSAP for engaging UI effects
@@ -16,5 +16,5 @@ Welcome to my **Portfolio Website**, where I showcase my skills, projects, and e
 - **Fast & SEO-Friendly** – Optimized for performance and discoverability
 - 
 ## 🔗 Live Demo
-(https://shriharshnandigamwar.netlify.app/)
+(https://shriharshnandigamwar.vercel.app)
 
