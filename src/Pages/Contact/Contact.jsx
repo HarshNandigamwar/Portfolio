@@ -54,6 +54,9 @@ const Contact = () => {
     if (data.success) {
       setResult("Form Submitted Successfully");
       event.target.reset();
+      for (let i = 0; i < 20; i++) {
+        confetti();
+      }
     } else {
       console.log("Error", data);
       setResult(data.message);
@@ -95,6 +98,7 @@ const Contact = () => {
           name="email"
           required
         />
+
         <textarea
           name="message"
           placeholder="Your Message"

@@ -1,6 +1,6 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 gsap.registerPlugin(ScrollTrigger);
 const SkillCard = (props) => {
   useEffect(() => {
@@ -28,13 +28,16 @@ const SkillCard = (props) => {
     });
   }, []);
 
+const [Online,setOnline] = useState(navigator.onLine )
+
+
   return (
     <div>
       <div className="bg-[#000000] rounded-[8px] p-[5px] flex flex-col items-center h-[150px] w-[90px] justify-center lg:w-[150px] hover:border hover:border-cyan-300 hover:shadow-[0_0_5px_aqua]">
         <div className="flex flex-col items-center justify-center p-[5px]">
           <img
             src={props.image}
-            alt="N/A"
+            alt={Online? 'Loading...':"Offline"}
             srcset=""
             className="h-[60px]"
             loading="lazy"
