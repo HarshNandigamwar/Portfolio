@@ -5,7 +5,12 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-[12px] bg-[#1a1a1a] h-[50px] sticky w-full z-20 top-0">
-      <div className="text-cyan-300 font-bold text-xl">{"< Shriharsh />"}</div>
+      <a href="#home">
+        <div className="text-cyan-300 font-bold text-xl">
+          {"< Shriharsh />"}
+        </div>
+      </a>
+
       <div onClick={() => setShowMenu(!showMenu)} className="cursor-pointer">
         <img
           style={{ display: showMenu ? "none" : "flex" }}
