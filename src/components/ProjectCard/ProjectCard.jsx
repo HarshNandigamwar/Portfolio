@@ -15,14 +15,7 @@ const ProjectCard = (props) => {
         </h3>
         <p className="text-blue-300 text-sm mt-2">{props.info}</p>
 
-        {/* <div className="mt-3">
-        <p className="text-xs font-medium text-gray-500 uppercase">Tech Stack:</p>
-        <div className="flex flex-wrap gap-2 mt-1">
-          <span className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full">React</span>
-          <span className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full">Tailwind</span>
-          <span className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded-full">JavaScript</span>
-        </div>
-      </div> */}
+       
 
         <div className="mt-4 flex gap-3">
           <a
