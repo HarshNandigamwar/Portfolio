@@ -4,7 +4,7 @@ import "./Skills.css";
 import Problem from "../../assets/problem2.jpg";
 import Commun from "../../assets/comunication.jpg";
 import API from "../../assets/api.jpg";
-import Team from '../../assets/teamwork.png'
+import Team from "../../assets/teamwork.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -53,13 +53,9 @@ const Skills = () => {
               name="HTML"
             />
 
-            <SkillCard
-             image="https://skillicons.dev/icons?i=css" 
-            name="CSS" />
+            <SkillCard image="https://skillicons.dev/icons?i=css" name="CSS" />
 
-            <SkillCard 
-            image="https://skillicons.dev/icons?i=js"
-             name="JS" />
+            <SkillCard image="https://skillicons.dev/icons?i=js" name="JS" />
           </div>
         </div>
 
@@ -132,9 +128,7 @@ const Skills = () => {
 
         <div className="bg-black/30  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
-            <SkillCard
-             image="https://skillicons.dev/icons?i=git"
-              name="Git" />
+            <SkillCard image="https://skillicons.dev/icons?i=git" name="Git" />
 
             <SkillCard
               image="https://skillicons.dev/icons?i=github"
@@ -160,9 +154,10 @@ const Skills = () => {
               name="Netlify"
             />
 
-             <SkillCard
+            <SkillCard
               image="https://skillicons.dev/icons?i=replit"
-               name="Replit" /> 
+              name="Replit"
+            />
           </div>
         </div>
       </div>
@@ -177,10 +172,7 @@ const Skills = () => {
 
             <SkillCard image={Commun} name="Communi-cation" />
 
-            <SkillCard
-              image={Team}
-              name="Teamwork"
-            />
+            <SkillCard image={Team} name="Teamwork" />
           </div>
         </div>
       </div>
