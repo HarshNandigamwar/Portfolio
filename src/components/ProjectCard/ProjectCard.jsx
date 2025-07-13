@@ -19,14 +19,14 @@ const ProjectCard = (props) => {
           <a
             href={props.liveLink}
             target="_blank"
-            className="px-4 py-1.5 text-sm border bg-blue-500 text-white rounded-full hover:bg-blue-700 hover:border-blue-500 transition"
+            className="px-4 py-1.5 text-[13px] border bg-blue-500 text-white rounded-[5px] hover:bg-blue-700 hover:border-blue-500 transition"
           >
             Live Preview
           </a>
           <a
             href={props.gitLink}
             target="_blank"
-            className="px-4 py-1.5 text-sm border  bg-[#1a1a1a] text-white rounded-full hover:border-blue-500 transition"
+            className="px-4 py-1.5 text-[13px] border  bg-[#1a1a1a] text-white rounded-[5px] hover:border-blue-500 transition"
           >
             Source code
           </a>
