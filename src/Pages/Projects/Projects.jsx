@@ -16,44 +16,7 @@ const Projects = () => {
       <div className="projectDiv ">
        
 
-        {/* <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
-          <div>
-            <img
-              src={cc}
-              alt="N/A"
-              className="h-[170px] w-[320px] rounded-xl "
-            />
-          </div>
-          <div>
-            <h2 className="flex justify-center mt-[15px] text-3xl text-cyan-300">
-              Currency Converter
-            </h2>
-            <p className="flex justify-center items-center font-[13px] mt-[10px]">
-              Quickly convert currencies on-the-go Get up-to-date exchange rates
-              for countries worldwide.
-            </p>
-          </div>
-          <div className="flex flex-col justify-center items-center mt-[20px]">
-            <a
-              href="https://github.com/HarshNandigamwar/Currency-Converter"
-              target="_blank"
-            >
-              <img
-                src="https://skillicons.dev/icons?i=github"
-                alt="Github"
-                className="githubImg mb-[10px] h-[50px]"
-              />
-            </a>
-            <a
-              href="https://shriharsh-currency-converter.netlify.app/"
-              target="_blank"
-            >
-              <button className=" p-[0.3rem] rounded-[8px] bg-white text-[1rem] border-[2px] border-cyan-300 text-black">
-                Live Preview
-              </button>
-            </a>
-          </div>
-        </div> */}
+       
 
         {/* <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
           <div>
