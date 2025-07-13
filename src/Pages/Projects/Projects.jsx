@@ -1,48 +1,24 @@
 import React from "react";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import "./Project.css";
 import Sigma from "../../assets/sigma ai.jpg";
 import cc from "../../assets/currency converter .jpg";
 import weather from "../../assets/weather app.jpg";
 import sigmaMart from "../../assets/SigmaMart.png";
-import gsap from "gsap";
-import { useEffect } from "react";
-import { ScrollTrigger } from "gsap/all";
-gsap.registerPlugin(ScrollTrigger);
+
 
 const Projects = () => {
-  useEffect(() => {
-    gsap.utils.toArray(".reveal-section").forEach((el) => {
-      gsap.fromTo(
-        el,
-        {
-          y: 100,
-          opacity: 0,
-          scale: 0.9,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, []);
 
   return (
     <div id="projects" className="p-[20px] mt-[31px]   ">
       <h1 className="text-5xl text-cyan-300 flex items-center justify-center mb-[10px]">
-        Project
+        Projects
       </h1>
 
-      <div className="projectDiv">
-        <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
+      <div className="projectDiv ">
+
+
+        {/* <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
           <div>
             <img
               src={Sigma}
@@ -79,9 +55,9 @@ const Projects = () => {
               </button>
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
+        {/* <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
           <div>
             <img
               src={cc}
@@ -118,9 +94,9 @@ const Projects = () => {
               </button>
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
+        {/* <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
           <div>
             <img
               src={weather}
@@ -157,9 +133,54 @@ const Projects = () => {
               </button>
             </a>
           </div>
-        </div>
+        </div> */}
 
-        <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
+<ProjectCard
+img={Sigma}
+projectName="Sigma AI"
+alt="Sigma AI"
+info="It Is A smart and interactive chatbot designed to provide quick, accurate, and engaging responses to users."
+liveLink="https://sigma-ai-by-shriharsh.netlify.app/"
+gitLink = "https://github.com/HarshNandigamwar/Sigma-AI"
+/>
+
+<ProjectCard
+img={cc}
+projectName="Currency Converter"
+alt="Currency Converter"
+info="Quickly convert currencies on-the-go Get up-to-date exchange rates for countries worldwide."
+liveLink="https://shriharsh-currency-converter.netlify.app/"
+gitLink = "https://github.com/HarshNandigamwar/Currency-Converter"
+/>
+
+
+<ProjectCard
+img={weather}
+projectName="Weather app"
+alt="Weather app"
+info="Check the weather forecast anytime anywhere. Get accurate and up-to-date weather updates for your location."
+liveLink="https://weather-app-shriharsh.netlify.app/"
+gitLink = "https://github.com/HarshNandigamwar/Weather-App"
+/>
+
+
+<ProjectCard
+img={sigmaMart}
+projectName="E-Commerce app"
+alt="E-Commerce app"
+info="This is a dynamic E-Commerce web application built with React.js, designed to deliver a smooth and engaging shopping experience."
+liveLink="https://sigmamart.netlify.app/"
+gitLink = "https://github.com/HarshNandigamwar/Sigma-mart"
+/>
+
+
+
+
+
+
+
+
+        {/* <div className="bg-[#1a1a1a] p-[15px] rounded-2xl flex flex-col items-center mt-[20px] mb-[20px] h-[500px] lg:w-[320px] ">
           <div>
             <img
               src={sigmaMart}
@@ -193,7 +214,10 @@ const Projects = () => {
               </button>
             </a>
           </div>
-        </div>
+        </div> */}
+
+
+
       </div>
     </div>
   );

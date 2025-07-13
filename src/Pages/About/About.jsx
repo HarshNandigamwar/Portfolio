@@ -38,7 +38,7 @@ const About = () => {
     >
       {/* About card  */}
 
-      <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col gap-[10px] reveal-section max-w-[700px]">
+      <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col gap-[10px] reveal-section max-w-[700px]">
         <h1 className="text-4xl text-cyan-300 mb-[10px] ">About Me</h1>
         <p className="text-[16px] md:text-[18px]">
           {" "}
@@ -56,12 +56,12 @@ const About = () => {
 
       {/* Experience */}
       <div
-        className="bg-[#1a1a1a] py-10 px-6 md:px-20 mt-[20px] rounded-2xl max-w-[700px]"
+        className="bg-black/30 border border-blue-500 py-10 px-6 md:px-20 mt-[20px] rounded-2xl max-w-[700px]"
         id="experience"
       >
         <h2 className="text-3xl font-bold text-cyan-300 mb-6">Experience</h2>
 
-        <div className="bg-[#1e1e1e] p-6 rounded-2xl shadow-md transition hover:shadow-xl">
+        <div className="bg-black/50 border border-blue-500 p-6 rounded-2xl shadow-md transition hover:shadow-xl">
           <h3 className="text-xl font-semibold text-cyan-300">
             Frontend Developer Intern
           </h3>
@@ -99,10 +99,24 @@ const About = () => {
             </li>
           </ul>
         </div>
+
+        <div className="bg-black/50 border border-blue-500 p-6 rounded-2xl shadow-md transition hover:shadow-xl mt-5">
+          <h3 className="text-[18px] font-semibold text-cyan-300">
+            Hackathon Participant – HACKHAZARDS 2025
+          </h3>
+          <p className="text-sm text-gray-500">May 2025 | Team of 3</p>
+          <p className="text-sm mt-1">
+            We built a smart chatbot with advanced capabilities for seamless
+            user interaction. It leverages the Groq AI API for fast and accurate
+            query responses. To enhance usability, we integrated a real-time
+            voice assistant. This allows hands-free, efficient, and interactive
+            communication.
+          </p>
+        </div>
       </div>
 
       {/* Certifications */}
-      <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col gap-[10px] reveal-section mt-[20px] max-w-[700px]">
+      <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col gap-[10px] reveal-section mt-[20px] max-w-[700px]">
         <h1 className="text-4xl text-cyan-300 mb-[10px]">Certifications</h1>
         <div className="text-[18px]">
           <h3 className="text-[17px]">
@@ -120,7 +134,7 @@ const About = () => {
       </div>
 
       {/* Education */}
-      <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col  reveal-section mt-[20px] max-w-[700px]">
+      <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col  reveal-section mt-[20px] max-w-[700px]">
         <h1 className="text-4xl text-cyan-300 mb-[10px]">Education</h1>
         <p className="text-[15px] md:text-[18px] ">
           Bachelor of Science in Information Technology

@@ -41,9 +41,9 @@ const Skills = () => {
       </div>
 
       {/* Frontend   */}
-      <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col items-center lg:max-w-[500px]">
+      <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Frontend</h1>
-        <div className="bg-[#1a1a1a]  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <h1 className="flex items-center justify-center text-2xl">
             Languages
           </h1>
@@ -53,13 +53,17 @@ const Skills = () => {
               name="HTML"
             />
 
-            <SkillCard image="https://skillicons.dev/icons?i=css" name="CSS" />
+            <SkillCard
+             image="https://skillicons.dev/icons?i=css" 
+            name="CSS" />
 
-            <SkillCard image="https://skillicons.dev/icons?i=js" name="JS" />
+            <SkillCard 
+            image="https://skillicons.dev/icons?i=js"
+             name="JS" />
           </div>
         </div>
 
-        <div className="bg-[#1a1a1a]  flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
+        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
           <h1 className="flex items-center justify-center text-2xl mt-[15px]">
             Libraries & Frameworks
           </h1>
@@ -83,10 +87,10 @@ const Skills = () => {
       </div>
 
       {/* Backend   */}
-      <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
+      <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Backend</h1>
 
-        <div className="bg-[#1a1a1a]  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className="bg-black/30  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard
               image="https://skillicons.dev/icons?i=nodejs"
@@ -105,7 +109,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="bg-[#1a1a1a]  flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
+        <div className="bg-black/30  flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard
               image="https://skillicons.dev/icons?i=firebase"
@@ -123,12 +127,14 @@ const Skills = () => {
       </div>
 
       {/* Tools   */}
-      <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
+      <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Tools</h1>
 
-        <div className="bg-[#1a1a1a]  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className="bg-black/30  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
-            <SkillCard image="https://skillicons.dev/icons?i=git" name="Git" />
+            <SkillCard
+             image="https://skillicons.dev/icons?i=git"
+              name="Git" />
 
             <SkillCard
               image="https://skillicons.dev/icons?i=github"
@@ -142,7 +148,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="bg-[#1a1a1a]  flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
+        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard
               image="https://skillicons.dev/icons?i=vercel"
@@ -154,16 +160,18 @@ const Skills = () => {
               name="Netlify"
             />
 
-             <SkillCard image="https://skillicons.dev/icons?i=replit" name="Replit" /> 
+             <SkillCard
+              image="https://skillicons.dev/icons?i=replit"
+               name="Replit" /> 
           </div>
         </div>
       </div>
 
       {/* Soft Skills   */}
-      <div className="bg-[#1a1a1a] p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
+      <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Soft Skill</h1>
 
-        <div className="bg-[#1a1a1a]  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard image={Problem} name="Problem Solving" />
 
