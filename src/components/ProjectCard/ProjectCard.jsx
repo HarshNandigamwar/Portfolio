@@ -15,8 +15,6 @@ const ProjectCard = (props) => {
         </h3>
         <p className="text-blue-300 text-sm mt-2">{props.info}</p>
 
-       
-
         <div className="mt-4 flex gap-3">
           <a
             href={props.liveLink}
