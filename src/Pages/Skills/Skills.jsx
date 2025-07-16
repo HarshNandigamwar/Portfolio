@@ -5,35 +5,8 @@ import Problem from "../../assets/problem2.jpg";
 import Commun from "../../assets/comunication.jpg";
 import API from "../../assets/api.jpg";
 import Team from "../../assets/teamwork.png";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-const Skills = () => {
-  useEffect(() => {
-    gsap.utils.toArray(".reveal-section").forEach((el) => {
-      gsap.fromTo(
-        el,
-        {
-          y: 100,
-          opacity: 0,
-          scale: 0.9,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, []);
 
+const Skills = () => {
   return (
     <div className="p-[20px] mt-[35px] flex flex-col items-center pt-13">
       <div className="flex items-center justify-center text-5xl text-blue-500 font-bold mb-[20px]">
