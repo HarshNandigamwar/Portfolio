@@ -1,32 +1,8 @@
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+
 import React, { useEffect, useState } from "react";
-gsap.registerPlugin(ScrollTrigger);
+
 const SkillCard = (props) => {
-  useEffect(() => {
-    gsap.utils.toArray(".reveal-section").forEach((el) => {
-      gsap.fromTo(
-        el,
-        {
-          y: 100,
-          opacity: 0,
-          scale: 0.9,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, []);
+
 
   const [Online, setOnline] = useState(navigator.onLine);
 
