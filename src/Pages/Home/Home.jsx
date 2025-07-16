@@ -1,5 +1,5 @@
 import React from "react";
-import './Home.css'
+import "./Home.css";
 import Img from "../../assets/myImg.jpg";
 import Resume from "../../assets/ShriharshNandigamwar_resume.pdf";
 import { useRef } from "react";
@@ -52,7 +52,7 @@ const Home = () => {
 
   return (
     <>
-      <div id="home">
+      <div className="pt-13">
         <div
           className="mt-[30px] flex flex-col items-center mb-[30px]  "
           ref={myImg}
@@ -66,7 +66,7 @@ const Home = () => {
         >
           <p ref={hello}>Hello, I'm</p>
 
-          <h1 className="text-3xl font-bold text-cyan-300" ref={name}>
+          <h1 className="text-3xl font-bold text-blue-500" ref={name}>
             {" "}
             Shriharsh Nandigamwar
           </h1>
@@ -126,9 +126,7 @@ const Home = () => {
 
         <div className="flex justify-center mt-[25px]">
           <a href={Resume} download="Shriharsh_Nandigamwar_resume.pdf">
-            <button className="resumeBtn">
-              Download CV
-            </button>
+            <button className="resumeBtn">Download CV</button>
           </a>
         </div>
       </div>

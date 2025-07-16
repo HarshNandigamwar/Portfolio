@@ -8,8 +8,8 @@ import sigmaMart from "../../assets/SigmaMart.png";
 
 const Projects = () => {
   return (
-    <div id="projects" className="p-[20px] mt-[31px]   ">
-      <h1 className="text-5xl text-cyan-300 flex items-center justify-center mb-[10px]">
+    <div className="project p-[20px] mt-16   ">
+      <h1 className="text-5xl text-blue-500 font-bold flex items-center justify-center mb-[10px]">
         Projects
       </h1>
 

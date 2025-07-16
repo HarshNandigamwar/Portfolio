@@ -64,8 +64,8 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="p-[20px] flex flex-col items-center">
-      <h1 className="text-5xl text-cyan-300 flex justify-center mb-[10px] mt-[30px]">
+    <div className="p-[20px] flex flex-col items-center">
+      <h1 className="text-5xl text-blue-500 font-bold flex justify-center mb-[10px] mt-[30px]">
         Contact
       </h1>
 
@@ -86,14 +86,14 @@ const Contact = () => {
       >
         <input
           type="text"
-          className="name font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white  rounded-[0.5rem] bg-black/30 border border-blue-500 hover:border hover:border-cyan-300  "
+          className="name font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white  rounded-[0.5rem] bg-black/30 border border-blue-500 hover:border-2 hover:border-cyan-300  "
           placeholder="Your name"
           name="name"
           required
         />
         <input
           type="text"
-          className="email font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white  rounded-[0.5rem] bg-black/30 border border-blue-500 hover:border hover:border-cyan-300   "
+          className="email font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white  rounded-[0.5rem] bg-black/30 border border-blue-500 hover:border-2 hover:border-cyan-300   "
           placeholder="Your Email"
           name="email"
           required
@@ -103,14 +103,14 @@ const Contact = () => {
           name="message"
           placeholder="Your Message"
           rows={5}
-          className="msg font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white  rounded-[0.5rem] bg-black/30 border border-blue-500 hover:border hover:border-cyan-300   "
+          className="msg font-medium w-full max-w-[40rem] m-[0.5rem] p-[10px] text-white  rounded-[0.5rem] bg-black/30 border border-blue-500 hover:border-2 hover:border-cyan-300   "
           required
         ></textarea>
         <span>{result}</span>
         <button
           type="submit"
           value="Send"
-          className="submitBtn submitButton w-[10rem] bg-white border-[3px] border-cyan-300 rounded-[10px] font-bold cursor-pointer p-[10px] text-black hover:bg-black hover:text-cyan-300 mb-[20px] mt-[20px]"
+          className="submitBtn submitButton w-[10rem] bg-white border-[3px] border-blue-500 rounded-[10px] font-bold cursor-pointer p-[10px] text-black hover:bg-black hover:text-blue-500 mb-[20px] mt-[20px]"
         >
           Submit
         </button>

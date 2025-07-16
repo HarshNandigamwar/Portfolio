@@ -1,0 +1,18 @@
+header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+}
+nav {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 0px 10px;
+  align-items: center;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}

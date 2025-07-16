@@ -1,45 +1,18 @@
 import React from "react";
+import "./About.css";
 import { useEffect } from "react";
 import Certificat from "../../../public/SkillCraft Tecnology Certificate & Letter of Recommendation.pdf";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+
 
 const About = () => {
-  useEffect(() => {
-    gsap.utils.toArray(".reveal-section").forEach((el) => {
-      gsap.fromTo(
-        el,
-        {
-          y: 100,
-          opacity: 0,
-          scale: 0.9,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
-    });
-  }, []);
+ 
 
   return (
-    <div
-      id="about"
-      className="p-[20px] mt-[20px] gap-[10px] flex flex-col items-center"
-    >
+    <div className="p-[20px] mt-[20px] gap-[10px] flex flex-col items-center pt-13">
       {/* About card  */}
 
       <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col gap-[10px] reveal-section max-w-[700px]">
-        <h1 className="text-4xl text-cyan-300 mb-[10px] ">About Me</h1>
+        <h1 className="text-4xl text-blue-500 mb-[10px] ">About Me</h1>
         <p className="text-[16px] md:text-[18px]">
           {" "}
           I'm Shriharsh Nandigamwar, a passionate Full Stack Developer dedicated
@@ -59,10 +32,10 @@ const About = () => {
         className="bg-black/30 border border-blue-500 py-10 px-6 md:px-20 mt-[20px] rounded-2xl max-w-[700px]"
         id="experience"
       >
-        <h2 className="text-3xl font-bold text-cyan-300 mb-6">Experience</h2>
+        <h2 className="text-3xl font-bold text-blue-500 mb-6">Experience</h2>
 
         <div className="bg-black/50 border border-blue-500 p-6 rounded-2xl shadow-md transition hover:shadow-xl">
-          <h3 className="text-xl font-semibold text-cyan-300">
+          <h3 className="text-xl font-semibold text-blue-500">
             Frontend Developer Intern
           </h3>
 
@@ -101,7 +74,7 @@ const About = () => {
         </div>
 
         <div className="bg-black/50 border border-blue-500 p-6 rounded-2xl shadow-md transition hover:shadow-xl mt-5">
-          <h3 className="text-[18px] font-semibold text-cyan-300">
+          <h3 className="text-[18px] font-semibold text-blue-500">
             Hackathon Participant – HACKHAZARDS 2025
           </h3>
           <p className="text-sm text-gray-500">May 2025 | Team of 3</p>
@@ -117,17 +90,17 @@ const About = () => {
 
       {/* Certifications */}
       <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col gap-[10px] reveal-section mt-[20px] max-w-[700px]">
-        <h1 className="text-4xl text-cyan-300 mb-[10px]">Certifications</h1>
+        <h1 className="text-4xl text-blue-500 mb-[10px]">Certifications</h1>
         <div className="text-[18px]">
           <h3 className="text-[17px]">
-            <b className="text-cyan-300">IBM</b>: Web Developmenet Fundamentals
+            <b className="text-blue-500">IBM</b>: Web Developmenet Fundamentals
           </h3>
           <h3 className="text-[14px]">
-            <b className="text-cyan-300">AWS APAC</b>: Solutions Architecture
+            <b className="text-blue-500">AWS APAC</b>: Solutions Architecture
             job Simulation
           </h3>
           <h3 className="text-[17px]">
-            <b className="text-cyan-300">Accenture & Forage</b>: Developer &
+            <b className="text-blue-500">Accenture & Forage</b>: Developer &
             Technology job Simulation
           </h3>
         </div>
@@ -135,7 +108,7 @@ const About = () => {
 
       {/* Education */}
       <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col  reveal-section mt-[20px] max-w-[700px]">
-        <h1 className="text-4xl text-cyan-300 mb-[10px]">Education</h1>
+        <h1 className="text-4xl text-blue-500 mb-[10px]">Education</h1>
         <p className="text-[15px] md:text-[18px] ">
           Bachelor of Science in Information Technology
         </p>

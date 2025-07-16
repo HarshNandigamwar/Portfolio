@@ -35,15 +35,15 @@ const Skills = () => {
   }, []);
 
   return (
-    <div id="skills" className="p-[20px] mt-[35px] flex flex-col items-center">
-      <div className="flex items-center justify-center text-5xl text-cyan-300 mb-[20px]">
+    <div className="p-[20px] mt-[35px] flex flex-col items-center pt-13">
+      <div className="flex items-center justify-center text-5xl text-blue-500 font-bold mb-[20px]">
         Skills
       </div>
 
       {/* Frontend   */}
       <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Frontend</h1>
-        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className=" flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <h1 className="flex items-center justify-center text-2xl">
             Languages
           </h1>
@@ -59,7 +59,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
+        <div className=" flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
           <h1 className="flex items-center justify-center text-2xl mt-[15px]">
             Libraries & Frameworks
           </h1>
@@ -86,7 +86,7 @@ const Skills = () => {
       <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Backend</h1>
 
-        <div className="bg-black/30  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className="  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard
               image="https://skillicons.dev/icons?i=nodejs"
@@ -105,7 +105,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="bg-black/30  flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
+        <div className="  flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard
               image="https://skillicons.dev/icons?i=firebase"
@@ -126,7 +126,7 @@ const Skills = () => {
       <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Tools</h1>
 
-        <div className="bg-black/30  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className="  flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard image="https://skillicons.dev/icons?i=git" name="Git" />
 
@@ -142,7 +142,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
+        <div className=" flex flex-col gap-[10px] reveal-section  lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard
               image="https://skillicons.dev/icons?i=vercel"
@@ -166,7 +166,7 @@ const Skills = () => {
       <div className="bg-black/30 border border-blue-500 p-[20px] rounded-2xl flex flex-col items-center mt-[25px] lg:max-w-[500px]">
         <h1 className="font-bold text-[40px] ">Soft Skill</h1>
 
-        <div className="bg-black/30 flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
+        <div className=" flex flex-col gap-[10px] reveal-section lg:w-[500px] lg:max-w-[500px]">
           <div className="flex justify-between p-[10px] mt-[5px] gap-[8px]">
             <SkillCard image={Problem} name="Problem Solving" />
 
