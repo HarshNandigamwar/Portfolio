@@ -46,7 +46,7 @@ const Projects = () => {
           projectName="E-Commerce app"
           alt="E-Commerce app"
           info="This is a dynamic E-Commerce web application built with React.js, designed to deliver a smooth and engaging shopping experience."
-          liveLink="https://sigmamart.netlify.app/"
+          liveLink="https://sigma-mart.vercel.app/"
           gitLink="https://github.com/HarshNandigamwar/Sigma-mart"
         />
       </div>
